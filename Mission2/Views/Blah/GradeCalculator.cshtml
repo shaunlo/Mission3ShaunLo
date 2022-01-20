@@ -1,0 +1,27 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+@model GradeCalculatorModel;
+
+<!--A "Grade Calculator" form-->
+<h3>Grading Calculator</h3>
+<form method="post" name="form">
+    <label>Your Assignments: (55%)</label><br />
+    <input id="txtAssignment" asp-for="Assignments" /><br />
+    <label>Your Group Project: (5%)</label><br />
+    <input id="txtGroupProject" asp-for="Group_Project" /><br />
+    <label>Your Quizzes: (10%)</label><br />
+    <input id="txtQuizzes" asp-for="Quizzes" /><br />
+    <label>Your Exams: (20%)</label><br />
+    <input id="txtExams" asp-for="Exams" /><br />
+    <label>Your INTEX: (10%)</label><br />
+    <input id="txtIntex" asp-for="INTEX" /><br />
+    <input id="btnCal" type="submit" value="Calculate">
+    <div asp-validation-summary="All"></div>
+</form>
+
+
+<script src="~/js/JavaScript.js" asp-append-version="true"></script>
